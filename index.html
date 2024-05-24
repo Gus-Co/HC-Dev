@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Form</title>
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #myForm {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+			padding-right: 50px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f8f8f8;
+        }
+        #myForm label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        #myForm input[type="text"],
+        #myForm input[type="date"],
+        #myForm input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #myForm input[type="button"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #myForm input[type="button"]:hover {
+            background-color: #45a049;
+        }
+		#heading{
+		 font-family: "Times New Roman", Times, serif;
+		 text-align: center;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: red;
+            padding: 5px;
+		}
+		#left{
+		border: 2px solid black;
+            border-radius: 10px;
+			padding-left: 25px;
+			padding-right:500px;
+			padding-bottom:25px;
+		}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<h3 id="heading">PRF Multiplex</h3>
+    <form id="myForm">
+	 <!-- <label for="KW">KW:</label>
+        <input type="text" id="KW">
+        <!-- Add the rest of your form fields here -->
+        <!-- <input type="button" value="Submit" onclick="submitForm()"> -->
+        <div id="left">
+		<h6>MULTIPLEX PRF TEMPLATE M.E.A :<h6>
+		Customer: <input type="text" id="customer"><br>
+        Order Date: <input type="date" id="orderDate"><br>
+        Customer Order no: <input type="text" id="customerOrderNo"><br>
+        </div>
+		Project Name: <input type="text" id="projectName"><br>
+		 Required Date: <input type="date" id="requiredDate"><br>
+		  Quotation No: <input type="text" id="quotationNo"><br>
+		  
+           SYSTEM CAPACITY 1: <input type="text" id="systemCapacity1"><br>
+		SYSTEM CAPACITY 2: <input type="text" id="systemCapacity2"><br>
+		SYSTEM CAPACITY 3: <input type="text" id="systemCapacity3"><br>
+		KW 1: <input type="text" id="KW"><br>
+		KW 2: <input type="text" id="KW"><br>
+		KW 3: <input type="text" id="KW"><br>
+	   EVAPORATING: <input type="text" id="evaporating"><br>
+        CONDENSING: <input type="text" id="condensing"><br>
+		AMBIENT: <input type="text" id="ambient"><br>
+       FRAME MODEL SELECTION: <input type="text" id="frameModelSelection"><br>
+	   Compressor Brand: <input type="text" id="compressorBrand"><br>    
+        Order Date: <input type="date" id="orderDate"><br>
+        Rack_Type: <input type="text" id="rackType"><br>
+        Refrigerant: <input type="text" id="refrigerant"><br>
+        Rack Frame Size: <input type="text" id="rackFrameSize"><br>      
+        Qty of Identical Racks: <input type="number" id="qtyOfIdenticalRacks"><br>
+		<labal>Multiplex Model Description :</labal> <Input type="text" id="modeldescription"> </Input>
+		<br>
+		<labal>Title</label>
+	<select>
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+</select>
+		
+		<labal>Title</label>
+	<select>
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+</select>
+		
+		<labal>Title</label>
+	<select>
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+</select>
+		
+		<labal>Title</label>
+	<select>
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+</select>
+		
+		<labal>Title</label>
+	<select>
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+</select>
+		
+		<labal>Title</label>
+	<select>
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+</select>
+		
+		<labal>Title</label>
+	<select>
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+</select>
+	
+		<labal>Title</label>
+	<select>
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+</select>
+		
+	<labal>Title</label>
+	<select>
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+</select>
+	
+		<labal>Title</label>
+	<select>
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+</select>
+		
+		<labal>Title</label>
+	<select>
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+</select>
+		
+		<labal>Title</label>
+	<select>
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+</select>
+		
+		
+		
+        <input type="button" value="Submit" onclick="submitForm()">
+		
+	
+		
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    function submitForm() {
+    var formData = {
+        KW1: document.getElementById('KW1').value,
+		KW2 : document.getElementById('KW2').value,
+		KW3: document.getElementById('KW3').value,
+        frameModelSelection: document.getElementById('frameModelSelection').value,
+        evaporating: document.getElementById('evaporating').value,
+        customerOrderNo: document.getElementById('customerOrderNo').value,
+        customer: document.getElementById('customer').value,
+        condensing: document.getElementById('condensing').value,
+        compressorBrand: document.getElementById('compressorBrand').value,
+        ambient: document.getElementById('ambient').value,
+        orderDate: document.getElementById('orderDate').value,
+        systemCapacity2: document.getElementById('systemCapacity2').value,
+        systemCapacity3: document.getElementById('systemCapacity3').value,
+        systemCapacity1: document.getElementById('systemCapacity1').value,
+        requiredDate: document.getElementById('requiredDate').value,
+        rackType: document.getElementById('rackType').value,
+        refrigerant: document.getElementById('refrigerant').value,
+        rackFrameSize: document.getElementById('rackFrameSize').value,
+        quotationNo: document.getElementById('quotationNo').value,
+        projectName: document.getElementById('projectName').value,
+        qtyOfIdenticalRacks: document.getElementById('qtyOfIdenticalRacks').value
+    };
+	 function submitForm() {
+            var formData = {
+                KW: document.getElementById('KW').value,
+                // Add the rest of your form data here
+            };
+            console.log(formData);
+            // Here you would typically send 'formData' to your server or database.
+        }
+
+    // Create a string from the form data
+    var data = '';
+    for (var key in formData) {
+        data += key + ': ' + formData[key] + '\n';
+    }
+
+    // Create a downloadable link for the text file
+    var a = document.createElement('a');
+    a.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(data);
+    a.download = 'formData.txt';
+    a.style.display = 'none';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
+
+			
+        }
+    </script>
+</body>
+</html>

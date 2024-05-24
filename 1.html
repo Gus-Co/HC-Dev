@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quotation Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #myForm {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            padding-right: 50px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f8f8f8;
+        }
+        #myForm label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        #myForm input[type="text"],
+        #myForm input[type="date"],
+        #myForm input[type="number"],
+        #myForm select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        #myForm input[type="button"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #myForm input[type="button"]:hover {
+            background-color: #45a049;
+        }
+        #heading {
+            font-family: "Times New Roman", Times, serif;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: red;
+            padding: 5px;
+        }
+        #left {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 25px;
+        }
+
+
+        #heading {
+            font-family: "Times New Roman", Times, serif;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: red;
+            padding: 5px;
+        }
+
+        .section {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/testing/HC HEAT 1.PNG" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <h3 id="heading">PRF Multiplex</h3>
+    <form id="myForm">
+        <div id="left">
+            <h6>MULTIPLEX PRF TEMPLATE M.E.A</h6>
+            <label for="customer">Customer:</label>
+            <input type="text" id="customer" name="customer">
+
+            <label for="orderDate">Order Date:</label>
+            <input type="date" id="orderDate" name="orderDate">
+
+            <label for="customerOrderNo">Customer Order No:</label>
+            <input type="text" id="customerOrderNo" name="customerOrderNo">
+        </div>
+<div id="left">
+        <label for="projectName">Project Name:</label>
+        <input type="text" id="projectName" name="projectName">
+
+        <label for="requiredDate">Required Date:</label>
+        <input type="date" id="requiredDate" name="requiredDate">
+
+        <label for="quotationNo">Quotation No:</label>
+        <input type="text" id="quotationNo" name="quotationNo">
+    </div>
+
+    <div id="left">
+        <label for="systemCapacity1">SYSTEM CAPACITY 1:</label>
+        <select id="systemCapacity1" name="systemCapacity1">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+            <option value="None">None</option>
+        </select>
+
+        <label for="systemCapacity2">SYSTEM CAPACITY 2:</label>
+        <select id="systemCapacity2" name="systemCapacity2">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+            <option value="None">None</option>
+        </select>
+
+        <label for="systemCapacity3">SYSTEM CAPACITY 3:</label>
+        <select id="systemCapacity3" name="systemCapacity3">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+            <option value="None">None</option>
+        </select>
+    </div>
+
+    <div id="left">
+        <label for="KW1">KW 1:</label>
+        <input type="text" id="KW1" name="KW1">
+
+        <label for="KW2">KW 2:</label>
+        <input type="text" id="KW2" name="KW2">
+
+        <label for="KW3">KW 3:</label>
+        <input type="text" id="KW3" name="KW3">
+    </div>
+
+    <div id="left">
+        <label for="evaporating">EVAPORATING:</label>
+        <input type="text" id="evaporating" name="evaporating">
+
+        <label for="condensing">CONDENSING:</label>
+        <input type="text" id="condensing" name="condensing">
+
+        <label for="ambient">AMBIENT:</label>
+        <input type="text" id="ambient" name="ambient">
+    </div>
+    <div id="left">
+        <label for="frameModelSelection">FRAME MODEL SELECTION:</label>
+        <select id="frameModelSelection" name="frameModelSelection">
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+
+        <label for="compressorBrand">Compressor Brand:</label>
+        <select id="compressorBrand" name="compressorBrand">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <label for="rackType">RACK TYPE:</label>
+        <select id="rackType" name="rackType">
+            <option value="INDOOR">INDOOR</option>
+            <option value="OUTDOOR">OUTDOOR</option>
+            <option value="HYBRID">HYBRID</option>
+        </select>
+    </div>
+
+    <div id="left">
+        <label for="refrigerant">Refrigerant:</label>
+        <select id="refrigerant" name="refrigerant">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <label for="rackFrameSize">Rack Frame Size:</label>
+        <select id="rackFrameSize" name="rackFrameSize">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <label for="qtyOfIdenticalRacks">Qty of Identical Racks:</label>
+        <input type="number" id="qtyOfIdenticalRacks" name="qtyOfIdenticalRacks">
+    </div>
+        <label for="modelDescription">Multiplex Model Description:</label>
+        <input type="text" id="modelDescription" name="modelDescription">
+
+        <div class="section">
+            <label for="modelDescription">Multiplex Model Description:</label>
+            <input type="text" id="modelDescription" name="modelDescription">
+
+            <label for="vsdModel">VSD Model Y/N:</label>
+            <select id="vsdModel" name="vsdModel">
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+            </select>
+
+            <label for="compressorEquipmentAddOn">Compressor Equipment Add On Selections:</label>
+            <input type="text" id="compressorEquipmentAddOn" name="compressorEquipmentAddOn">
+        </div>
+
+        <div class="section">
+            <label for="oilReservoir">OIL RESERVOIR Y/N:</label>
+            <select id="oilReservoir" name="oilReservoir">
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+            </select>
+
+            <label for="suctionAccumulator">Suction Accumulator Y/N:</label>
+            <select id="suctionAccumulator" name="suctionAccumulator">
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+            </select>
+
+            <label for="oilSeparator">Oil Separator Y/N:</label>
+            <select id="oilSeparator" name="oilSeparator">
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+            </select>
+        </div>
+
+
+     
+
+        <input type="button" value="Submit" onclick="submitForm()">
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script>
+        function submitForm() {
+            var formData = {
+                customer: document.getElementById('customer').value,
+                orderDate: document.getElementById('orderDate').value,
+                customerOrderNo: document.getElementById('customerOrderNo').value,
+                projectName: document.getElementById('projectName').value,
+                requiredDate: document.getElementById('requiredDate').value,
+                quotationNo: document.getElementById('quotationNo').value,
+                systemCapacity1: document.getElementById('systemCapacity1').value,
+                systemCapacity2: document.getElementById('systemCapacity2').value,
+                systemCapacity3: document.getElementById('systemCapacity3').value,
+                KW1: document.getElementById('KW1').value,
+                KW2: document.getElementById('KW2').value,
+                KW3: document.getElementById('KW3').value,
+                evaporating: document.getElementById('evaporating').value,
+                condensing: document.getElementById('condensing').value,
+                ambient: document.getElementById('ambient').value,
+                frameModelSelection: document.getElementById('frameModelSelection').value,
+                compressorBrand: document.getElementById('compressorBrand').value,
+                rackType: document.getElementById('rackType').value,
+                refrigerant: document.getElementById('refrigerant').value,
+                rackFrameSize: document.getElementById('rackFrameSize').value,
+                qtyOfIdenticalRacks: document.getElementById('qtyOfIdenticalRacks').value,
+                modelDescription: document.getElementById('modelDescription').value
+            };
+
+            // Pricing logic
+            function calculatePrice(systemCapacity, KW) {
+                let pricePerKW;
+                if (systemCapacity >= 0 && systemCapacity < 20) {
+                    pricePerKW = 500;
+                } else if (systemCapacity >= 21 && systemCapacity < 50) {
+                    pricePerKW = 700;
+                } else if (systemCapacity >= 51 && systemCapacity < 100) {
+                    pricePerKW = 500;
+                } else {
+                    pricePerKW = 0;
+                }
+                return KW * pricePerKW;
+            }
+
+            let price1 = calculatePrice(getSystemCapacityRange(formData.systemCapacity1), formData.KW1);
+            let price2 = calculatePrice(getSystemCapacityRange(formData.systemCapacity2), formData.KW2);
+            let price3 = calculatePrice(getSystemCapacityRange(formData.systemCapacity3), formData.KW3);
+
+            let totalPrice = price1 + price2 + price3;
+
+            function getSystemCapacityRange(capacity) {
+                if (capacity === "Low") return 15; // Mid value for Low range
+                if (capacity === "Medium") return 35; // Mid value for Medium range
+                if (capacity === "High") return 75; // Mid value for High range
+                return 0;
+            }
+
+            // Create PDF
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            doc.text("Quotation", 10, 10);
+            for (let key in formData) {
+                doc.text(`${key}: ${formData[key]}`, 10, 20 + 10 * Object.keys(formData).indexOf(key));
+            }
+            doc.text(`Total Price: ${totalPrice}`, 10, 20 + 10 * Object.keys(formData).length);
+
+            doc.save('quotation.pdf');
+        }
+    </script>
+</body>
+</html>

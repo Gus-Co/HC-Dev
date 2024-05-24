@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Cost Calculator</h2>
+
+<form id="myForm">
+  <label for="x">Measurement X:</label><br>
+  <input type="number" id="x" name="x"><br>
+  <label for="y">Measurement Y:</label><br>
+  <input type="number" id="y" name="y"><br>
+  <label for="quantity">Quantity:</label><br>
+  <input type="number" id="quantity" name="quantity"><br>
+  <label for="sheet">Sheet Metal:</label><br>
+  <select id="sheet" name="sheet">
+    <option value="282,32">1.2 AL</option>
+    <option value="382,26">1.6 AL</option>
+    <!-- Add options for all 11 sheets here -->
+  </select><br>
+  <label for="paint">Add Paint:</label><br>
+  <input type="checkbox" id="paint" name="paint"><br>
+  <input type="submit" value="Calculate">
+</form>
+
+<p id="result"></p>
+
+<script>
+document.getElementById('myForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Get form data
+    var x = parseFloat(document.getElementById('x').value);
+    var y = parseFloat(document.getElementById('y').value);
+    var quantity = parseFloat(document.getElementById('quantity').value);
+    var sheet = parseFloat(document.getElementById('sheet').value);
+    var paint = document.getElementById('paint').checked;
+    var paintCost = paint ? 91 : 0;
+
+    // Calculate total cost
+    var totalCost = (x * y * quantity * sheet) + paintCost;
+
+    // Display the result
+    document.getElementById('result').innerText = 'Total Cost: ' + totalCost;
+});
+</script>
+
+</body>
+</html>

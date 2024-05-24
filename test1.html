@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data</title>
+   <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    padding-right: 25;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+    
+   </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Customer Order Form</h2>
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="customer">Customer:</label>
+                <input type="text" id="customer" name="customer">
+            </div>
+            <div class="form-group">
+                <label for="orderDate">Order Date:</label>
+                <input type="date" id="orderDate" name="orderDate">
+            </div>
+            <div class="form-group">
+                <label for="customerOrderNo">Customer Order No:</label>
+                <input type="text" id="customerOrderNo" name="customerOrderNo">
+            </div>
+            <div class="form-group">
+                <label for="projectName">Project Name:</label>
+                <input type="text" id="projectName" name="projectName">
+            </div>
+            <div class="form-group">
+                <label for="requiredDate">Required Date:</label>
+                <input type="date" id="requiredDate" name="requiredDate">
+            </div>
+            <div class="form-group">
+                <label for="quotationNo">Quotation No:</label>
+                <input type="text" id="quotationNo" name="quotationNo">
+            </div>
+            <div class="form-group">
+                <label for="systemCapacity1">System Capacity 1:</label>
+                <input type="text" id="systemCapacity1" name="systemCapacity1">
+            </div>
+            <div class="form-group">
+                <label for="systemCapacity2">System Capacity 2:</label>
+                <input type="text" id="systemCapacity2" name="systemCapacity2">
+            </div>
+            <div class="form-group">
+                <label for="systemCapacity3">System Capacity 3:</label>
+                <input type="text" id="systemCapacity3" name="systemCapacity3">
+            </div>
+            <div class="form-group">
+                <label for="KW1">KW 1:</label>
+                <input type="text" id="KW1" name="KW1">
+            </div>
+            <div class="form-group">
+                <label for="KW2">KW 2:</label>
+                <input type="text" id="KW2" name="KW2">
+            </div>
+            <div class="form-group">
+                <label for="KW3">KW 3:</label>
+                <input type="text" id="KW3" name="KW3">
+            </div>
+            <div class="form-group">
+                <label for="evaporating">Evaporating:</label>
+                <input type="text" id="evaporating" name="evaporating">
+            </div>
+            <div class="form-group">
+                <label for="condensing">Condensing:</label>
+                <input type="text" id="condensing" name="condensing">
+            </div>
+            <div class="form-group">
+                <label for="ambient">Ambient:</label>
+                <input type="text" id="ambient" name="ambient">
+            </div>
+            <div class="form-group">
+                <label for="frameModelSelection">Frame Model Selection:</label>
+                <input type="text" id="frameModelSelection" name="frameModelSelection">
+            </div>
+            <div class="form-group">
+                <label for="compressorBrand">Compressor Brand:</label>
+                <input type="text" id="compressorBrand" name="compressorBrand">
+            </div>
+            <div class="form-group">
+                <label for="rackType">Rack Type:</label>
+                <input type="text" id="rackType" name="rackType">
+            </div>
+            <div class="form-group">
+                <label for="refrigerant">Refrigerant:</label>
+                <input type="text" id="refrigerant" name="refrigerant">
+            </div>
+            <div class="form-group">
+                <label for="rackFrameSize">Rack Frame Size:</label>
+                <input type="text" id="rackFrameSize" name="rackFrameSize">
+            </div>
+            <div class="form-group">
+                <label for="qtyOfIdenticalRacks">Qty of Identical Racks:</label>
+                <input type="text" id="qtyOfIdenticalRacks" name="qtyOfIdenticalRacks">
+            </div>
+            <div class="form-group">
+                <label for="modelDescription">Model Description:</label>
+                <input type="text" id="modelDescription" name="modelDescription">
+            </div>
+            <div class="form-group">
+                <label for="oilReservoir">Oil Reservoir:</label>
+                <input type="checkbox" id="oilReservoir" name="oilReservoir">
+            </div>
+            <div class="form-group">
+                <label for="suctionAccumulator">Suction Accumulator:</label>
+                <input type="checkbox" id="suctionAccumulator" name="suctionAccumulator">
+            </div>
+            <div class="form-group">
+                <label for="oilSeparator">Oil Separator:</label>
+                <input type="checkbox" id="oilSeparator" name="oilSeparator">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script>
+
+<script>
+document.getElementById('orderForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Collect form data
+    const formData = new FormData(event.target);
+    const data = {};
+    formData.forEach((value, key) => {
+        data[key] = value;
+    });
+
+    // Prepare content for PDF
+    let content = [];
+    for (let key in data) {
+        content.push({ text: `${key}: ${data[key]}`, style: 'body' });
+    }
+
+    // Define the PDF document
+    var docDefinition = {
+        content: content,
+        styles: {
+            body: {
+                fontSize: 12,
+                bold: false,
+                font: 'Arial'
+            }
+        }
+    };
+
+    // Create and download the PDF
+    pdfMake.createPdf(docDefinition).download('form-data.pdf');
+
+    // Display form data in console (or send to a server)
+    console.log(data);
+
+    alert('Form submitted successfully!');
+});
+
+
+    </script>
+</body>
+</html>

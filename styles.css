@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+#myForm {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-right: 60px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+#myForm label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#myForm input[type="text"],
+#myForm input[type="date"],
+#myForm input[type="number"],
+#myForm select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* #myForm-4 select {
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+} */
+
+#myForm input[type="button"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgb(130, 108, 108);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#myForm input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+#heading {
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(191, 187, 184);
+    padding: 15px;
+
+    
+
+}
+
+body{
+    background-image: url('Background.png');
+    position: relative;
+    body::after {
+        content: "";
+        background-image: url('Background.png');
+        position: absolute; /* Needed for z-index to work */
+        top: 1;
+        left: 4;
+        right: 0;
+        bottom: 0;
+        z-index: 10; /* Higher value means closer to the front */
+    }
+}
+
+
+.section {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    padding-right: 50;
+   
+}
+
+.Contain {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+flex-wrap: wrap;
+} 
+
+
+.Test1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.section1 {
+    flex: 1;
+    background-color: lightgray;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    padding-right: 50;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: calc(100% - 12px); /* Full width minus padding */
+    padding: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+h6 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+ .section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+    background-color: lightgray;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    padding-right: 50;
+}
+
+.section2 label, .section2 select {
+    flex-basis: calc(33.33% - 3px);
+    margin-bottom: auto;
+}
+
+ 
+
